@@ -63,11 +63,9 @@ function normalizeOrderType(type?: "Spot" | "Market" | "FillOrKill" | "PostOnly"
   switch (type) {
     case "Market":
       return OrderType.Market;
-    case "FillOrKill":
-      return OrderType.FillOrKill;
-    case "PostOnly":
-      return OrderType.PostOnly;
     case "Spot":
+    case "FillOrKill":
+    case "PostOnly":
     default:
       return OrderType.Spot;
   }
