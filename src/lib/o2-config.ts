@@ -1,5 +1,8 @@
 import path from "node:path";
 import os from "node:os";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 const DEVNET_BASE_URL = "https://api.devnet.o2.app";
 const TESTNET_BASE_URL = "https://api.testnet.o2.app";
